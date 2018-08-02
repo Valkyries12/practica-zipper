@@ -1,0 +1,110 @@
+@media only screen and (min-width: 768px) {
+    section.about,
+    section.services,
+    section.contact {
+        height: 100vh;
+    }
+
+    div.col {
+        width: 60%;
+        height: 100vh;
+    }
+
+    div.one-col-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    section.testimonials div.three-col {
+        align-items: center;
+    }
+
+    section.testimonials div.three-col div.mini-col {
+        width: 70%;
+        height: 25%;
+    }
+
+    section.contact {
+        height: 100vh;
+    }
+
+    section.contact div.one-col-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+
+    section.contact div.footer {
+        width: 60%;
+        height: 10%;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    body{
+        position: relative;
+    }
+
+    header img {
+        display: none;
+        
+    }
+
+
+    header nav {
+        background-color: transparent;
+        display: block;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    section.services div.col {
+        height: 100%;
+    }
+
+    div.col {
+        width: 50%;
+    }
+
+
+    section.testimonials div.three-col {
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    section.testimonials div.three-col div.mini-col {
+        width: 48%;
+        padding: 50px;
+        height: 320px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    div.col {
+        width: 40%;
+    }
+
+    section.testimonials {
+        height: 90vh;
+        
+    }
+
+    section.testimonials div.three-col {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        
+    }
+
+    section.testimonials div.three-col div.mini-col {
+        width: 31%;
+    }
+}

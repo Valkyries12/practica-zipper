@@ -1,0 +1,291 @@
+/*//////////////////////////////////////////*/
+/*///////////////GLOBALES/////////////////////*/
+/*///////////////////////////////////////////*/
+
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #fff;
+    font-size: 4.375rem;
+    font-weight: 300;
+    text-shadow: 2px 2px 5px  black;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 350;
+    margin: 40px auto;
+    text-transform: capitalize;
+}
+
+h3 {
+    color: #fdff73;
+    font-size: 1.875rem;
+    font-weight: 400;
+    margin: 40px 0;
+    text-transform: capitalize;
+}
+
+div.col {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.col p {
+    line-height: 1.2;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+a,
+a:link,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.7s ease;
+}
+
+a:hover {
+    color: #fff1ab;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*///////////////////////////////////////////*/
+/*////////////////HEADER////////////////////*/
+/*///////////////////////////////////////////*/
+
+header {
+    align-items: center;
+    background-image: url("../img/image-01.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+header img {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin: 10px auto;
+    padding: 3px 5px;
+    position: fixed;
+    width: 40px;
+}
+
+header nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    margin-top: 46px;
+    position: fixed;
+    width: 90%;
+    transition: 0.7s ease;
+}
+
+.visible {
+    display: block;
+    
+}
+
+.fondo-transparente {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+header nav ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav ul li {
+    font-size: 1.3125rem;
+    font-weight: 400;
+    list-style: none;
+    padding: 15px;
+}
+
+header div.hero {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35%;
+    align-items: center;
+}
+
+header div.hero p {
+    color: #fff;
+    font-size: 23px;
+    font-weight: 100;
+    text-shadow: 2px 2px 5px  black;
+    margin-top: 15px;
+}
+
+/*////////////////////////////////////////*/
+/*///////////SECTION ABOUT////////////////*/
+/*////////////////////////////////////////*/
+
+section.about {
+    background-image: url("../img/image-02.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+}
+
+section.about div.col p {
+    line-height: 1.5;
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+}
+
+/*////////////////////////////////////////////*/
+/*//////////////SECTION SERVICES//////////////*/
+/*//////////////////////////////////////////////*/
+
+section.services {
+    background-image: url("../img/image-03.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+}
+
+section.services div.col p {
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+/*///////////////////////////////////////////////*/
+/*////////////////SECTION TESTIMONIALS////////////*/
+/*////////////////////////////////////////////////*/
+
+section.testimonials {
+    background-image: url("../img/image-04.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.testimonials div.three-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+section.testimonials div.three-col div.mini-col {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-around;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    padding: 50px;
+    width: 100%;
+}
+section.testimonials div.three-col div.mini-col:last-child {
+    margin-bottom: 100px;
+}
+
+section.testimonials div.three-col div.mini-col p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+section.testimonials div.three-col div.mini-col i {
+    font-size: 4.375rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*//////////////////////////////////////////////*/
+/*///////////////CONTACT US/////////////////////*/
+/*//////////////////////////////////////////////*/
+
+section.contact {
+    background-image: url("../img/image-05.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.contact div.one-col-right {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.contact div.one-col-right div.col input,
+section.contact div.one-col-right div.col textarea,
+button {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+section.contact div.one-col-right div.col button {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    width: 50%;
+}
+
+section.contact div.footer {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    padding: 10px;
+    width: 100%;
+}
+
+section.contact div.footer p {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+
+
